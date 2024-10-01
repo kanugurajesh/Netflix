@@ -9,12 +9,12 @@ export default function Home() {
           <nav className="flex justify-between items-center">
             <Link
               href="/"
-              className="text-[#e50914] text-xl font-semibold font-[family-name:var(--font-geist-sans)] tracking-wide"
+              className="text-[#e50914] text-xl font-semibold font-[family-name:var(--font-geist-sans)] tracking-wide leading-5"
             >
               STREAM
             </Link>
-            <div className="flex gap-2 items-center">
-              <select className="rounded-md py-1 bg-black text-white border border-1 font-semibold">
+            <div className="flex gap-2 items-center text-sm font-semibold">
+              <select className="rounded-sm py-1 bg-black text-white border border-1 px-1">
                 <option value="Home" className="bg-white text-black">
                   Home
                 </option>
@@ -30,8 +30,10 @@ export default function Home() {
               </select>
               <Link
                 href="/signin"
-                className="bg-[#e50914] text-white p-1 px-2 rounded-md font-semibold hover:bg-[#c11119]"
-              >Sign in</Link>
+                className="bg-[#e50914] text-white p-1 px-3 rounded-sm hover:bg-[#c11119]"
+              >
+                Sign in
+              </Link>
             </div>
           </nav>
         </div>
