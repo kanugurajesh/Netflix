@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        netflix: "url('/netflix.jpg')",
+        anime: "url('/anime.jpg')",
+      },
     },
   },
   plugins: [],
