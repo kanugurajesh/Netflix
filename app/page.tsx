@@ -54,7 +54,7 @@ export default function Home() {
               <nav className="flex justify-between items-center">
                 <Link
                   href="/"
-                  className="text-[#e50914] text-2xl sm:text-2xl min-[947px]:text-3xl font-black font-[family-name:var(--font-geist-mono)] min-[956px]:text-[40px]"
+                  className="text-[#e50914] text-2xl sm:text-3xl min-[947px]:text-3xl font-black font-[family-name:var(--font-geist-mono)] min-[956px]:text-[40px]"
                 >
                   NETFLIX
                 </Link>
