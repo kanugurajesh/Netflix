@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import animationData from "../lotties/loading.json";
-import rightArrow from "../lotties/right-arrow.json";
+// import rightArrow from "../lotties/right-arrow.json";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
@@ -30,14 +30,14 @@ export default function Home() {
     },
   };
 
-  const rightArrowOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: rightArrow,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const rightArrowOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: rightArrow,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   return (
     <div className="">
