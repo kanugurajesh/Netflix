@@ -38,15 +38,15 @@ export default function Home() {
         </div>
       ) : (
         <div>
-          <div className="h-screen bg-anime bg-cover bg-center relative p-5 py-6 sm:p-7">
+          <div className="h-screen bg-anime bg-cover bg-center relative p-5 py-6 sm:p-7 min-[956px]:px-20">
             <div className="absolute inset-0 bg-black opacity-70"></div>{" "}
             <div className="relative z-10">
               <nav className="flex justify-between items-center">
                 <Link
                   href="/"
-                  className="text-[#e50914] text-xl sm:text-2xl min-[947px]:text-3xl font-semibold font-[family-name:var(--font-geist-mono)] tracking-wide leading-5"
+                  className="text-[#e50914] text-xl sm:text-2xl min-[947px]:text-3xl font-black font-[family-name:var(--font-geist-mono)] min-[956px]:text-[40px]"
                 >
-                  STREAM
+                  NETFLIX
                 </Link>
                 <div className="flex gap-3 items-center text-sm sm:text-base font-semibold">
                   <select className="rounded-md py-1 bg-black text-white border border-1 px-1 sm:px-3 border-gray-500">
