@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import animationData from "../lotties/loading.json";
-// import rightArrow from "../lotties/right-arrow.json";
+import rightArrow from "../lotties/right-arrow.json";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
@@ -30,14 +30,14 @@ export default function Home() {
     },
   };
 
-  // const rightArrowOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: rightArrow,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+  const rightArrowOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: rightArrow,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <div className="">
@@ -81,31 +81,31 @@ export default function Home() {
                   </Link>
                 </div>
               </nav>
-              {/* <div className="text-white flex flex-col justify-center items-center h-[80vh]">
-                <div>
-                  <h1>Unlimited movies, TV shows and more</h1>
-                  <p>Starts at ₹149. Cancel at any time.</p>
+              <div className="text-white flex flex-col justify-center items-center h-[80vh]">
+                <div className="text-center">
+                  <h1 className="text-[2rem] text-center font-[700] mb-[0.5rem]">Unlimited movies, TV shows and more</h1>
+                  <p className="text-[1rem] font-[400] mb-[1rem]">Starts at ₹149. Cancel at any time.</p>
                 </div>
-                <div className="flex flex-col justify-center items-center">
-                  <p>
+                <div className="flex flex-col justify-center items-center gap-4">
+                  <h3 className="text-center text-[1rem] font-[400] leading-[1.5]">
                     Ready to watch? Enter your email to create or restart your
                     membership.
-                  </p>
-                  <div className="flex gap-2">
+                  </h3>
+                  <div className="flex gap-2 flex-col min-[600px]:flex-row max-[599px]:w-full">
                     <input
                       type="text"
                       name=""
                       id=""
                       placeholder="Email address"
-                      className="rounded-md px-4 "
+                      className="rounded-md text-[1rem] leading-[1.5] p-3 px-4 bg-black border border-1 border-white opacity-60"
                     />
-                    <Link href="/signin" className="flex items-center justify-center p-2 bg-[#e50914] text-white font-bold pl-5 rounded-md">
-                    <span>Get Started</span>
+                    <Link href="/signin" className="flex items-center p-1 bg-[#e50914] text-white font-semibold pl-5 rounded-md w-40 mx-auto">
+                    <span className="text-[1.125rem]">Get Started</span>
                     <Lottie options={rightArrowOptions} height={40} width={40} />
                     </Link>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="h-screen"></div>
