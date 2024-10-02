@@ -83,8 +83,12 @@ export default function Home() {
               </nav>
               <div className="text-white flex flex-col justify-center items-center h-[80vh]">
                 <div className="text-center">
-                  <h1 className="text-[2rem] text-center font-[700] mb-[0.5rem]">Unlimited movies, TV shows and more</h1>
-                  <p className="text-[1rem] font-[400] mb-[1rem]">Starts at ₹149. Cancel at any time.</p>
+                  <h1 className="text-[2rem] text-center font-[700] mb-[0.5rem]">
+                    Unlimited movies, TV shows and more
+                  </h1>
+                  <p className="text-[1rem] font-[400] mb-[1rem]">
+                    Starts at ₹149. Cancel at any time.
+                  </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-4">
                   <h3 className="text-center text-[1rem] font-[400] leading-[1.5]">
@@ -92,16 +96,43 @@ export default function Home() {
                     membership.
                   </h3>
                   <div className="flex gap-2 flex-col min-[600px]:flex-row max-[599px]:w-full">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      placeholder="Email address"
-                      className="rounded-md text-[1rem] leading-[1.5] p-3 px-4 bg-black border border-1 border-white opacity-60"
-                    />
-                    <Link href="/signin" className="flex items-center p-1 bg-[#e50914] text-white font-semibold pl-5 rounded-md w-40 mx-auto">
-                    <span className="text-[1.125rem]">Get Started</span>
-                    <Lottie options={rightArrowOptions} height={40} width={40} />
+                    {/* <div>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Email address"
+                        className="rounded-md text-[1rem] leading-[1.5] p-3 px-4 bg-black border border-1 border-white opacity-60"
+                      />
+                      <label htmlFor=""></label>
+                    </div> */}
+                    <div className="relative w-full">
+                      <input
+                        type="text"
+                        id="email"
+                        required
+                        className="peer w-full p-4 bg-black text-white border border-white rounded-md opacity-60 focus:outline-none"
+                        placeholder=" "
+                        aria-required
+                      />
+                      <label
+                        htmlFor="email"
+                        className="absolute left-4 top-1/2 -translate-y-[15px] text-white opacity-60 text-base transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:opacity-60 peer-focus:top-[14px] peer-focus:text-sm peer-focus:opacity-100"
+                      >
+                        Email address
+                      </label>
+                    </div>
+
+                    <Link
+                      href="/signin"
+                      className="flex items-center p-1 bg-[#e50914] text-white font-semibold pl-5 rounded-md w-40 mx-auto"
+                    >
+                      <span className="text-[1.125rem]">Get Started</span>
+                      <Lottie
+                        options={rightArrowOptions}
+                        height={40}
+                        width={40}
+                      />
                     </Link>
                   </div>
                 </div>
