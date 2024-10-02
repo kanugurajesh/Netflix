@@ -4,23 +4,43 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+::-webkit-scrollbar-track::before {
+  content: '▲'; /* Unicode character for up arrow */
+  height: 12px;
+  color: #888;
+  text-align: center;
+  line-height: 12px; /* Make sure it aligns vertically */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
+  border: 3px solid transparent; /* Adds space */
+  background-clip: padding-box;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+  border-radius: 5px;
+  border: 3px solid transparent; /* Adds space */
+  background-clip: padding-box;
 }
 
 @layer base {

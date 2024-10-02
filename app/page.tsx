@@ -25,11 +25,11 @@ export default function Home() {
 
   return (
     <div className="">
-      {loading && (
+      {loading ? (
         <div className="h-screen bg-black flex items-center justify-center">
           <Lottie options={defaultOptions} height={200} width={200} />
         </div>
-      )}
+      ):(
       <div>
         <div className="h-screen bg-anime bg-cover bg-center relative p-5 py-6">
           <div className="absolute inset-0 bg-black opacity-70"></div>{" "}
@@ -68,6 +68,7 @@ export default function Home() {
         </div>
         <div className="h-screen"></div>
       </div>
+      )}
     </div>
   );
 }
