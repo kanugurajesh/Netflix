@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import animationData from "../lotties/loading.json";
+import rightArrow from "../lotties/right-arrow.json";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
@@ -29,6 +30,15 @@ export default function Home() {
     },
   };
 
+  const rightArrowOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: rightArrow,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className="">
       <Toaster />
@@ -44,7 +54,7 @@ export default function Home() {
               <nav className="flex justify-between items-center">
                 <Link
                   href="/"
-                  className="text-[#e50914] text-xl sm:text-2xl min-[947px]:text-3xl font-black font-[family-name:var(--font-geist-mono)] min-[956px]:text-[40px]"
+                  className="text-[#e50914] text-2xl sm:text-2xl min-[947px]:text-3xl font-black font-[family-name:var(--font-geist-mono)] min-[956px]:text-[40px]"
                 >
                   NETFLIX
                 </Link>
@@ -71,6 +81,31 @@ export default function Home() {
                   </Link>
                 </div>
               </nav>
+              {/* <div className="text-white flex flex-col justify-center items-center h-[80vh]">
+                <div>
+                  <h1>Unlimited movies, TV shows and more</h1>
+                  <p>Starts at ₹149. Cancel at any time.</p>
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                  <p>
+                    Ready to watch? Enter your email to create or restart your
+                    membership.
+                  </p>
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Email address"
+                      className="rounded-md px-4 "
+                    />
+                    <Link href="/signin" className="flex items-center justify-center p-2 bg-[#e50914] text-white font-bold pl-5 rounded-md">
+                    <span>Get Started</span>
+                    <Lottie options={rightArrowOptions} height={40} width={40} />
+                    </Link>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
           <div className="h-screen"></div>
