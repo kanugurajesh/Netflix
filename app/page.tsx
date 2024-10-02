@@ -59,7 +59,7 @@ export default function Home() {
                   NETFLIX
                 </Link>
                 <div className="flex gap-3 items-center text-sm sm:text-base font-semibold">
-                  <select className="rounded-md py-1 bg-black text-white border border-1 px-1 sm:px-3 border-gray-500">
+                  <select className="rounded-md py-2 bg-black text-white border border-1 px-1 sm:px-3 border-gray-500">
                     <option value="Home" className="bg-white text-black">
                       Home
                     </option>
@@ -75,7 +75,7 @@ export default function Home() {
                   </select>
                   <Link
                     href="/signin"
-                    className="bg-[#e50914] text-white p-1 px-3 rounded-md hover:bg-[#c11119] sm:px-4"
+                    className="bg-[#e50914] text-white p-2 px-3 rounded-md hover:bg-[#c11119] sm:px-4"
                   >
                     Sign In
                   </Link>
