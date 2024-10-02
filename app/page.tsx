@@ -75,7 +75,7 @@ export default function Home() {
                   </select>
                   <Link
                     href="/signin"
-                    className="bg-[#e50914] text-white p-2 px-3 rounded-md hover:bg-[#c11119] sm:px-4"
+                    className="bg-[#e50914] text-white p-2 px-4 rounded-md hover:bg-[#c11119] sm:px-4"
                   >
                     Sign In
                   </Link>
